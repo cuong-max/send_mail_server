@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title>Viettel Mail System</title>
+</head>
+
+<body>
+<table style="box-sizing:border-box;
+              font-family:Avenir,Helvetica,sans-userif;
+              border-collapse: collapse;
+              width: 100%">
+    <caption style="padding-top:.5rem;
+                    padding-bottom:.5rem;
+                    background-color:#dc3545;
+                    text-align: center;
+                    color: #fff;
+                    padding: 20px;
+                    font-weight:500;
+                    border-radius:3px 3px 0 0;
+                    font-size:14px;">
+        DCIM currently cannot discover load balancer {code}
+    </caption>
+    <thead style="text-align: left;
+    			  color: black;
+    			  font-size:14px;
+                  border-bottom: 2px solid #ccc;">
+    <tr>
+        <th style="padding: 20px">ID</th>
+        <td>{id}</td>
+    </tr>
+    <tr>
+        <th style="padding: 20px">Code</th>
+        <td>{code}</td>
+    </tr>
+    <tr>
+        <th style="padding: 20px">LB_Type</th>
+        <td>{lb_type}</td>
+    </tr>
+    <tr>
+        <th style="padding: 20px">IP Addresses</th>
+        <td>{mgmt_ips}</td>
+    </tr>
+    <tr>
+        <th style="padding: 20px">Manager</th>
+        <td>{usr_manager}</td>
+    </tr>
+    <tr>
+        <th style="padding: 20px">Reason</th>
+        <td>{error_msg}</td>
+    </tr>
+    <tr>
+        <th style="padding: 20px">DCIM Information</th>
+        <td><a href="http://10.255.58.203/dcim/load-balancers/{id}/"
+               target="_blank"> Source</a></td>
+    </tr>
+    </thead>
+</table>
+
+</body>
+</html>

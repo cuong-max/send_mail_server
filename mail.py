@@ -16,10 +16,11 @@ def verify_send_mail(receivers, subject, content):
     msg['Subject'] = subject
     msg['From'] = sender
     msg['To'] = receivers.split(',')
-    msg.set_content(content)
+    msg.set_content(content, 'html')
 
     try:
-        session = smtplib.SMTP_SSL(MAIL_SERVER['MAIL_SERVER_IP'], MAIL_SERVER['MAIL_SERVER_PORT'])
+        session = smtplib.SMTP_SSL(MAIL_SERVER['MAIL_SERVER_IP'],
+                                   MAIL_SERVER['MAIL_SERVER_PORT'])
         session.login(sender, password)
         session.send_message(msg)
         session.quit()
