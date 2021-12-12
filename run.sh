@@ -4,4 +4,4 @@ set -a
 source .env
 set +a
 
-python main.py
+python3 main.py
